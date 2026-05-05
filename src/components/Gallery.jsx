@@ -1,9 +1,10 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import './Gallery.css';
 
 function Gallery({ images }) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const dragStart = useRef(null);
 
   const openLightbox = (index) => {
     setCurrentIndex(index);
@@ -19,6 +20,14 @@ function Gallery({ images }) {
   const goPrev = useCallback(() => {
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   }, [images.length]);
+
+  const handleDragStart = (clientX) => { dragStart.current = clientX; };
+  const handleDragEnd = (clientX) => {
+    if (dragStart.current === null) return;
+    const delta = dragStart.current - clientX;
+    if (Math.abs(delta) > 50) delta > 0 ? goNext() : goPrev();
+    dragStart.current = null;
+  };
 
   useEffect(() => {
     if (!lightboxOpen) return;
@@ -61,6 +70,10 @@ function Gallery({ images }) {
         className={`lightbox ${lightboxOpen ? 'open' : ''}`}
         onClick={closeLightbox}
         id="image-lightbox"
+        onMouseDown={(e) => handleDragStart(e.clientX)}
+        onMouseUp={(e) => handleDragEnd(e.clientX)}
+        onTouchStart={(e) => handleDragStart(e.touches[0].clientX)}
+        onTouchEnd={(e) => handleDragEnd(e.changedTouches[0].clientX)}
       >
         <button className="lightbox-close" onClick={closeLightbox} aria-label="Cerrar">✕</button>
         <button className="lightbox-nav lightbox-prev" onClick={(e) => { e.stopPropagation(); goPrev(); }} aria-label="Anterior">‹</button>

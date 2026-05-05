@@ -80,9 +80,7 @@ function BodegasEstandar() {
             <span className="section-label">Galería</span>
             <h2 className="section-title">Conoce los Espacios</h2>
           </div>
-          <div className="reveal">
-            <Gallery images={galleryImages} />
-          </div>
+          <Gallery images={galleryImages} />
         </div>
       </section>
 

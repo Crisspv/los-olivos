@@ -86,9 +86,7 @@ function BodegasRefrigeracion() {
             <span className="section-label">Galería</span>
             <h2 className="section-title">Cámaras y Espacios</h2>
           </div>
-          <div className="reveal">
-            <Gallery images={galleryImages} />
-          </div>
+          <Gallery images={galleryImages} />
         </div>
       </section>
 
