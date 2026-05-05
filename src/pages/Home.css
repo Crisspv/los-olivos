@@ -97,7 +97,8 @@
 /* Contact */
 .contact-section { background: var(--color-bg-primary); position: relative; }
 .contact-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(245,158,11,0.06) 0%, transparent 60%); pointer-events: none; }
-.contact-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-xl); margin-bottom: var(--space-3xl); position: relative; }
+.contact-cards { display: flex; justify-content: center; gap: var(--space-xl); margin-bottom: var(--space-3xl); position: relative; }
+.contact-cards .contact-card { width: 100%; max-width: 650px; }
 .contact-card { padding: var(--space-2xl); text-align: center; }
 .contact-card-icon { width: 64px; height: 64px; margin: 0 auto var(--space-lg); background: var(--color-accent-glow); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; }
 .contact-card h3 { font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; margin-bottom: var(--space-xs); }

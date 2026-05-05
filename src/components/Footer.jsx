@@ -11,7 +11,7 @@ function Footer() {
               <span className="logo-icon">LO</span>
               <span>Los Olivos</span>
             </div>
-            <p>Fraccionamiento Industrial Privado en Zapopan Norte.</p>
+            <p>Parque Industrial Privado en Zapopan Norte.</p>
             <p>Calle Paseo de los Olivos No. 100, Zapopan, Jalisco.</p>
             <p>A menos de 1 km del Periférico Norte.</p>
           </div>
@@ -30,7 +30,6 @@ function Footer() {
             <h4>Contacto</h4>
             <ul>
               <li><a href="tel:+523351205558">Arq. Alfonso Azano</a></li>
-              <li><a href="tel:+524492857912">Arq. Selene</a></li>
               <li><a href="https://wa.me/523351205558?text=Hola%2C%20me%20interesa%20información%20sobre%20las%20bodegas" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
               <li><a href="#">Lun-Vie 9am-5pm / Sáb 9am-1pm</a></li>
             </ul>
@@ -38,7 +37,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 Fraccionamiento Industrial Los Olivos. Todos los derechos reservados.</p>
+          <p>© 2026 Parque Industrial Los Olivos. Todos los derechos reservados.</p>
           <Link to="/aviso-de-privacidad">Aviso de Privacidad</Link>
         </div>
       </div>

@@ -11,11 +11,12 @@ const galleryImages = [
   { src: '/img/nave 2.jpg', alt: 'Nave industrial vista 2' },
   { src: '/img/ingreso.jpg', alt: 'Ingreso al fraccionamiento' },
   { src: '/img/oficina.JPG', alt: 'Oficina interior' },
+  { src: '/img/oficina baño.jpeg', alt: 'Baño de oficina' },
 ];
 
 const planImages = [
-  { src: '/img/laminaNormal.png', label: 'Plano general del fraccionamiento' },
-  { src: '/img/planoNormal.png', label: 'Layout de distribución' },
+  { src: '/img/laminaNormal.png', alt: 'Plano general del fraccionamiento' },
+  { src: '/img/planoNormal.png', alt: 'Layout de distribución' },
 ];
 
 function BodegasEstandar() {
@@ -92,14 +93,7 @@ function BodegasEstandar() {
             <span className="section-label">Planos</span>
             <h2 className="section-title">Planos del Fraccionamiento</h2>
           </div>
-          <div className="plans-grid reveal">
-            {planImages.map((plan, i) => (
-              <div className="plan-card" key={i}>
-                <img src={plan.src} alt={plan.label} loading="lazy" />
-                <div className="plan-card-label">{plan.label}</div>
-              </div>
-            ))}
-          </div>
+          <Gallery images={planImages} />
         </div>
       </section>
 

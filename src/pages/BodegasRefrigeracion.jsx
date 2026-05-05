@@ -14,8 +14,8 @@ const galleryImages = [
 ];
 
 const planImages = [
-  { src: '/img/laminaTransparente.png', label: 'Plano general — vista transparente' },
-  { src: '/img/planoTransparente.png', label: 'Layout de distribución — vista transparente' },
+  { src: '/img/laminaNormal.png', alt: 'Plano general del fraccionamiento' },
+  { src: '/img/planoNormal.png', alt: 'Layout de distribución' },
 ];
 
 function BodegasRefrigeracion() {
@@ -99,14 +99,7 @@ function BodegasRefrigeracion() {
             <span className="section-label">Planos</span>
             <h2 className="section-title">Planos del Fraccionamiento</h2>
           </div>
-          <div className="plans-grid reveal">
-            {planImages.map((plan, i) => (
-              <div className="plan-card" key={i}>
-                <img src={plan.src} alt={plan.label} loading="lazy" />
-                <div className="plan-card-label">{plan.label}</div>
-              </div>
-            ))}
-          </div>
+          <Gallery images={planImages} />
         </div>
       </section>
 

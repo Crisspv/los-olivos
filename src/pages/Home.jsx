@@ -3,7 +3,6 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import './Home.css';
 
 const WA_ALFONSO = 'https://wa.me/523351205558?text=Hola%2C%20me%20interesa%20información%20sobre%20las%20bodegas%20industriales%20Los%20Olivos';
-const WA_SELENE = 'https://wa.me/524492857912?text=Hola%2C%20me%20interesa%20información%20sobre%20las%20bodegas%20industriales%20Los%20Olivos';
 
 function Home() {
   const revealRef1 = useScrollReveal();
@@ -25,7 +24,7 @@ function Home() {
               Oportunidad única
             </div>
             <h1>
-              Fraccionamiento Industrial <span className="accent">Privado</span> en Zapopan Norte
+              Parque Industrial <span className="accent">Privado</span> en Zapopan Norte
             </h1>
             <p className="hero-subtitle">
               20 Bodegas Industriales Nuevas en Venta y Renta a menos de 1 km del Periférico.
@@ -73,7 +72,7 @@ function Home() {
               { icon: '🚛', title: 'Patio de Maniobras', desc: '4,000 M² de patio de maniobras para operaciones logísticas fluidas.' },
               { icon: '🅿️', title: 'Estacionamiento Privado', desc: 'Área exclusiva de estacionamiento dentro del fraccionamiento.' },
               { icon: '🛗', title: 'Elevador y Escaleras', desc: 'Acceso vertical con elevador de carga y escaleras de servicio.' },
-              { icon: '🔒', title: 'Fraccionamiento Privado', desc: 'Acceso controlado para la seguridad de tu inversión y operación.' },
+              { icon: '🔒', title: 'ParquePrivado', desc: 'Acceso controlado para la seguridad de tu inversión y operación.' },
             ].map((f, i) => (
               <div className="feature-card glass-card reveal" key={i} style={{ animationDelay: `${i * 0.1}s` }}>
                 <div className="feature-icon">{f.icon}</div>
@@ -147,7 +146,7 @@ function Home() {
                 </div>
               </div>
               <a
-                href="https://www.google.com/maps/search/Paseo+de+los+Olivos+100+Zapopan+Jalisco"
+                href="https://www.google.com/maps/place/FRACCIONAMIENTO+INDUSTRIAL+OLIVOS/@20.7485432,-103.3947803,17z/data=!3m1!4b1!4m6!3m5!1s0x8428af005fc5e25b:0x55ef74b236cda1e0!8m2!3d20.7485432!4d-103.3947803!16s%2Fg%2F11z2h2ljqb"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline btn-sm"
@@ -158,11 +157,11 @@ function Home() {
             </div>
             <div className="location-map reveal" style={{ animationDelay: '0.15s' }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.5!2d-103.39!3d20.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDQ1JzM2LjAiTiAxMDPCsDIzJzI0LjAiVw!5e0!3m2!1ses!2smx!4v1"
+                src="https://maps.google.com/maps?q=20.7485432,-103.3947803&output=embed"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación Fraccionamiento Industrial Los Olivos"
+                title="Ubicación Parque Industrial Los Olivos"
               ></iframe>
             </div>
           </div>
@@ -181,21 +180,11 @@ function Home() {
             <div className="contact-card glass-card reveal">
               <div className="contact-card-icon">👷</div>
               <h3>Arq. Alfonso Azano</h3>
-              <p className="contact-role">Asesor Comercial</p>
+              <p className="contact-role">Arquitecto de Obra - Asesor Comercial</p>
               <p className="contact-phone">33 5120 5558</p>
               <div className="contact-card-actions">
                 <a href="tel:+523351205558" className="btn btn-secondary btn-sm">📞 Llamar</a>
                 <a href={WA_ALFONSO} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm" id="contact-wa-alfonso">WhatsApp</a>
-              </div>
-            </div>
-            <div className="contact-card glass-card reveal" style={{ animationDelay: '0.15s' }}>
-              <div className="contact-card-icon">👩‍💼</div>
-              <h3>Arq. Selene</h3>
-              <p className="contact-role">Asesora Comercial</p>
-              <p className="contact-phone">44 9285 7912</p>
-              <div className="contact-card-actions">
-                <a href="tel:+524492857912" className="btn btn-secondary btn-sm">📞 Llamar</a>
-                <a href={WA_SELENE} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm" id="contact-wa-selene">WhatsApp</a>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ function AvisoPrivacidad() {
 
           <p>
             De conformidad con lo establecido en la Ley Federal de Protección de Datos Personales
-            en Posesión de los Particulares (en adelante, la &quot;Ley&quot;), Fraccionamiento Industrial
+            en Posesión de los Particulares (en adelante, la &quot;Ley&quot;), Parque Industrial
             Los Olivos, con domicilio en Calle Paseo de los Olivos No. 100, Municipio Zapopan,
             Jalisco, pone a su disposición el presente Aviso de Privacidad.
           </p>
