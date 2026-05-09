@@ -3,6 +3,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import './Home.css';
 
 const WA_ALFONSO = 'https://wa.me/523351205558?text=Hola%2C%20me%20interesa%20información%20sobre%20las%20bodegas%20industriales%20Los%20Olivos';
+const WA_SELENE = 'https://wa.me/524492857912?text=Hola%2C%20me%20interesa%20información%20sobre%20las%20bodegas%20industriales%20Los%20Olivos';
 
 function Home() {
   const revealRef1 = useScrollReveal();
@@ -185,6 +186,16 @@ function Home() {
               <div className="contact-card-actions">
                 <a href="tel:+523351205558" className="btn btn-secondary btn-sm">📞 Llamar</a>
                 <a href={WA_ALFONSO} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm" id="contact-wa-alfonso">WhatsApp</a>
+              </div>
+            </div>
+            <div className="contact-card glass-card reveal" style={{ animationDelay: '0.15s' }}>
+              <div className="contact-card-icon">👩‍💼</div>
+              <h3>Arq. Selene</h3>
+              <p className="contact-role">Asesora Comercial</p>
+              <p className="contact-phone">44 9285 7912</p>
+              <div className="contact-card-actions">
+                <a href="tel:+524492857912" className="btn btn-secondary btn-sm">📞 Llamar</a>
+                <a href={WA_SELENE} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm" id="contact-wa-selene">WhatsApp</a>
               </div>
             </div>
           </div>
